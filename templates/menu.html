@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Our Menu!</h1>
+    </header>
+    <main class="main">
+        <div class="div_block"><a class="meal" href="hotdishes">Горячие блюда</a>
+            <img class="photos" src="https://e0.edimdoma.ru/data/posts/0002/1448/21448-ed4_wide.jpg?1631184474">
+        </div>
+        <div class="div_block"><a class="meal" href="breakfast">Завтраки</a>
+        <img class="photos" src="https://yagoda.coffee/shop/admin/uploads/4ad09f93eeed7d7c000c990e38a7bd4e2246ca8e001.jpg"></div>
+        <div class="div_block"><a class="meal" href="salads">Салаты</a>
+            <img class="photos" src="https://hip2go.ru/api2/images/IikoProducts26/c1c668e7c6-1_500x353.jpg"></div>
+    </main>
+    <main class="main2">
+        <div class="div_block"><a class="meal" href="desserts">Десерты</a>
+            <img class="photos" src="https://img.freepik.com/free-photo/high-view-tasty-cupcake-and-fork_23-2148718738.jpg"></div>
+        <div class="div_block"><a class="meal" href="shashlik">Шашлыки</a>
+            <img class="photos" src="https://e2.edimdoma.ru/data/posts/0001/8388/18388-ed4_wide.jpg?1631193083"></div>
+        <div class="div_block"><a class="meal" href="pizza">Пицца</a>
+            <img class="photos" src="https://www.tokyo-city.ru/images/interesno/Pitctca_-_natcionalnoe_italyanskoe_blyudo.jpg"></div>
+    </main>
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(250, 238, 222);
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(2, 44, 2);
+        color: white;
+        font-family: 'Courier New', 'monospace';
+    }
+    main{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 20px;
+    margin-top: 50px;
+}
+.main2{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 20px;
+}
+.div_block{
+    width: 400px;
+    height: 300px;
+    border-radius: 20px;
+    background-color: rgb(2, 44, 2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Добавим тень */
+}
+.photos{
+    height: 50%;
+    width: 50%;
+    border-radius: 20px;
+}
+.meal{
+    font-size: 30px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-family: Gill Sans, sans-serif;
+}
+s{
+    text-decoration: none;
+}
+@media screen and (max-width: 800px) {
+    .meal{
+        font-size: 20px;
+    }
+    h4{
+        font-size: 35px;
+        margin: 10px;
+    }
+    h2{
+        font-size: 18px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .TEST{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .lorem{
+        font-size: 15px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    .otzyv{
+        font-size: 15px;
+    }
+    h6{
+        font-size: 25px;
+    }
+    .reservation{
+        font-size: 20px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .input{
+        height: 10px;
+        width: 150px;
+    }
+    .last_button{
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+        padding: 0;
+    }
+    .description{
+        font-size: 20px;
+    }
+    button{
+        width: 150px;
+        height: 90px;
+        font-size: 15px;
+        padding: 0;
+    }
+    .div_block{
+        height: 170px;
+        border-radius: 15px;
+    }
+    .person_photo{
+        height: auto;
+        border-radius: 20px;
+    }
+    .divv{
+        height: 400px;
+    }
+    .big{
+        height: 500px;
+    }
+    #div1{
+        height: 200px;
+    }
+    .d3{
+        padding: 5px;
+        height: auto;
+    }
+    .clients{
+        height: 600px;
+    }
+    .registration{
+        height: 600px;
+    }
+    .div_img{
+        width: auto;
+        height: 200px;
+    }
+    .image{
+        height: 100%;
+    }
+    .photos{
+        border-radius: 10px;
+    }
+    .profiles{
+        border-radius: 15px;
+    }
+}
+@media screen and (max-width: 550px) {
+    .meal{
+        font-size: 15px;
+    }
+    h4{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .TEST{
+        font-size: 15px;
+    }
+    h3{
+        font-size: 25px;
+    }
+    .lorem{
+        font-size: 12px;
+    }
+    h5{
+        font-size: 15px;
+    }
+    .otzyv{
+        font-size: 10px;
+    }
+    h6{
+        font-size: 20px;
+    }
+    .reservation{
+        font-size: 15px;
+    }
+    p{
+        font-size: 10px;
+    }
+    .input{
+        height: 10px;
+        width: 150px;
+        padding: 10px;
+        font-size: 10px;
+    }
+    .last_button{
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+        padding: 0;
+    }
+    .description{
+        font-size: 10px;
+    }
+    button{
+        width: 100px;
+        height: 40px;
+        font-size: 10px;
+        padding: 0;
+    }
+    .div_block{
+        height: 120px;
+        border-radius: 10px;
+    }
+    .person_photo{
+        height: 90px;
+        width: auto;
+        border-radius: 7px;
+    }
+    .divv{
+        height: 200px;
+        gap: 10px;
+        width: 70%;
+    }
+    .big{
+        height: 250px;
+    }
+    #div1{
+        height: 200px;
+    }
+    .d3{
+        padding: 5px;
+        height: auto;
+    }
+    .clients{
+        height: 600px;
+    }
+    .registration{
+        height: 600px;
+    }
+    .registr{
+        width: 80%;
+    }
+    .div_img{
+        width: auto;
+        height: 200px;
+    }
+    .image{
+        height: 100%;
+    }
+    .photos{
+        border-radius: 5px;
+    }
+    .profiles{
+        border-radius: 10px;
+        height: 250px;
+    }
+    a{
+        font-size: 11px;
+    }
+    h2{
+        font-size: 17px;
+    }
+}
+</style>
