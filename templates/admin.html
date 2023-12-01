@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+</head>
+
+<body>
+    <header>
+        <h1>Welcome to Admin Page</h1>
+    </header>
+    <div class="header">
+        <a href="menu_admin">Manage menu</a>
+        <a href="orders">See Orders</a>
+        <a href="couriers">Manage Couriers</a>
+        <a href="filials">See Filials</a>
+        <a href="promocode">Manage Promocodes</a>
+    </div>
+    <div class="big">
+        <div class="divv">
+            <h4>Hello, Admin!</h4>
+            <span class="description">Here you can manage the anythig!</span>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        const instance = axios.create({
+            baseURL: "http://localhost:5002/",
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            }
+        })
+        const getJWT = async () => {
+            try {
+                const res = await instance.post("/auth/signin", { "phone": "996771065929", "password": "Hf,jnf98" })       
+            } catch(err){ 
+                console.log(err)
+            }
+        }
+        
+        document.addEventListener("DOMContentLoaded", async () => {
+            const token = localStorage.getItem("access_token_cooksoo");
+            if(!token) {
+                
+            }
+
+        })
+    </script>
+</body>
+
+</html>
+<style>
+    body {
+        margin: 0;
+        background-color: rgb(250, 238, 222);
+    }
+
+    header {
+        padding: 20px;
+        background-color: rgb(2, 44, 2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    h1 {
+        margin: 0;
+        color: white;
+        font-size: 35px;
+        font-family: 'Courier New', 'monospace';
+    }
+
+    .submit {
+        background-color: #4CAF50;
+        border-radius: 5px;
+        color: white;
+        padding: 5px 12px;
+        text-align: center;
+        font-size: 16px;
+        border: none;
+    }
+
+    .header {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(2, 44, 2);
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    a {
+        color: rgba(255, 255, 255, 0.863);
+        text-decoration: none;
+        font-family: Verdana, sans-serif;
+    }
+
+    a:hover {
+        color: white;
+        transition: 0.2s;
+    }
+
+    .big {
+        width: auto;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        background-image: url(https://opis-cdn.tinkoffjournal.ru/mercury/new-rest-spb_out.cfsxab74pba4..jpg);
+        background-size: cover;
+    }
+
+    .divv {
+        width: 60%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        background-color: rgba(61, 61, 61, 0.7);
+        flex-direction: column;
+        border-radius: 10px;
+        color: antiquewhite;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        padding: 20px;
+    }
+
+    h4 {
+        font-size: 50px;
+        color: antiquewhite;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+    }
+
+    .description {
+        font-size: 25px;
+        color: antiquewhite;
+        font-family: Marker Felt, fantasy;
+    }
+
+    button {
+        height: 100px;
+        width: 200px;
+        font-size: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        background-color: rgb(2, 44, 2);
+        border-radius: 20px;
+    }
+
+    button:hover {
+        background-color: rgb(255, 204, 0)(255, 191, 0);
+    }
+</style>

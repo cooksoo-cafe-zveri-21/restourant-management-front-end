@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="index.js" defer></script> -->
+    <title>Change Menu</title>
+</head>
+<body>
+    <header>
+        <h1>Change Menu!</h1>
+    </header>
+    <main class="main">
+        <div class="div_block">
+            <img class="photos" src="https://e0.edimdoma.ru/data/posts/0002/1448/21448-ed4_wide.jpg?1631184474">
+            <a class="meal" href="hotdishes">Горячие блюда</a>
+            <button>Change Dish</button>
+        </div>
+        <div class="div_block">
+            <img class="photos" src="https://yagoda.coffee/shop/admin/uploads/4ad09f93eeed7d7c000c990e38a7bd4e2246ca8e001.jpg">
+            <a class="meal" href="breakfast">Завтраки</a>
+            <button>Change Dish</button>
+        </div>
+        <div class="div_block">
+            <img class="photos" src="https://hip2go.ru/api2/images/IikoProducts26/c1c668e7c6-1_500x353.jpg">
+            <a class="meal" href="salads">Салаты</a>
+            <button>Change Dish</button>
+        </div>
+        <div class="div_block">
+            <img class="photos" src="https://img.freepik.com/free-photo/high-view-tasty-cupcake-and-fork_23-2148718738.jpg">
+            <a class="meal" href="desserts">Десерты</a>
+            <button>Change Dish</button>
+        </div>
+        <div class="div_block">
+            <img class="photos" src="https://e2.edimdoma.ru/data/posts/0001/8388/18388-ed4_wide.jpg?1631193083">
+            <a class="meal" href="shashlik">Шашлыки</a>
+            <button>Change Dish</button>
+        </div>
+        <div class="div_block">
+            <img class="photos" src="https://www.tokyo-city.ru/images/interesno/Pitctca_-_natcionalnoe_italyanskoe_blyudo.jpg">
+            <a class="meal" href="pizza">Пицца</a>
+            <button>Change Dish</button>
+        </div>
+    </main>
+    <div class="add">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="description">
+        <input type="number" placeholder="price">
+    </div>
+</body>
+</html>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: rgb(250, 238, 222);
+    }
+    header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(2, 44, 2);
+        color: white;
+        font-family: 'Courier New', 'monospace';
+    }
+    main{
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin: 20px;
+    margin-top: 50px;
+    flex-direction: column;
+}
+.div_block{
+    width: 90%;
+    height: 100px;
+    border-radius: 20px;
+    background-color: rgb(2, 44, 2);
+    display: flex;
+    justify-content: start;
+    padding-left: 20px;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Добавим тень */
+}
+.photos{
+    height: 50%;
+    width: auto;
+    border-radius: 20px;
+}
+.meal{
+    font-size: 30px;
+    color: rgb(200, 200, 200);
+    margin: 0;
+    font-family: Gill Sans, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.add{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    flex-direction: column;
+    gap: 10px;
+}
+</style>

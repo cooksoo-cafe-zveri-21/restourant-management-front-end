@@ -1,9 +1,10 @@
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
+    
 </head>
 <body>
     <header>
@@ -57,19 +58,9 @@
             </div>
         </div>
     </div>
-    <div class="registration"><div class="registr">
-        <span class="reservation">Reservation</span>
-        <h6>Book your Table</h6>
-        <input class="input" type="text" placeholder="Name">
-        <input class="input" type="text" placeholder="Email">
-        <input class="input" type="number" placeholder="Persons">
-        <input class="input" type="number" placeholder="Time">
-        <input class="input" type="number" placeholder="Date">
-        <button class="last_button">Book A Table</button>
-    </div>></div>
-    <div class="d100">
+    <footer>
         <h5>You can contact us by Email <a class="last_a">@makeev_e</a></h5>
-    </div>
+    </footer>
 </body>
 </html>
 <style>
@@ -317,87 +308,15 @@ h5{
     font-size: 15px;
     font-family: Palatino, URW Palladio L, serif;
 }
-.registration {
-  width: auto;
-  height: 900px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhZmV8ZW58MHx8MHx8fDA%3D&w=1000&q=80');
-  background-size: cover;
 
+footer{
+    height: 100px;
+    background-color: rgb(80, 80, 80);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.reservation {
-  font-size: 30px;
-  color: #fff; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  font-family: Comic Sans MS, Comic Sans, cursive;
-}
-
-h6 {
-  font-size: 40px;
-  margin: 0;
-  padding: 20px;
-  color: #fff; 
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
-  font-family: Gill Sans, sans-serif;;
-}
-
-.registr {
-  width: 60%;
-  height: 80%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  background-color: rgba(61, 61, 61, 0.7); 
-  flex-direction: column;
-  border-radius: 10px; /* Увеличим радиус скругления углов */
-  color: antiquewhite;
-  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5); /* Добавим тень */
-}
-
-.input {
-  padding: 15px; /* Увеличим внутренний отступ */
-  border: 2px solid #2980b9; /* Изменим цвет рамки */
-  border-radius: 10px; /* Увеличим радиус скругления углов */
-  font-size: 18px; /* Увеличим размер шрифта */
-  width: 300px;
-}
-
-.input:focus {
-  border-color: #3498db; /* Изменим цвет рамки при фокусе */
-  box-shadow: 0px 0px 12px rgba(41, 128, 185, 0.7); /* Увеличим размер и изменим цвет тени */
-}
-
-.last_button {
-  background: linear-gradient(to bottom, #f5ab5c, #2980b9);
-  color: #fff;
-  padding: 15px 30px; /* Увеличим отступы */
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.last_button:hover {
-  background: linear-gradient(to bottom, #cdc64d, #3498db);
-}
-
-button {
-  background-color: #f0d680;
-  color: #fff;
-  padding: 15px 30px; /* Увеличим отступы */
-  border: none;
-  border-radius: 10px;
-  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #2997b9;
-  transition: 0.5s;
-}
 @media screen and (max-width: 800px) {
     .meal{
         font-size: 20px;

@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/admin')
+def admin():
+    return render_template('admin.html')
+
 @app.route('/about')
 def about():
     return render_template('about.html')
@@ -42,5 +46,25 @@ def breakfast():
 def salads():
     return render_template('salads.html')
 
+@app.route('/menu_admin')
+def menu_admin():
+    return render_template('menu_admin.html')
+
+@app.route('/orders')
+def orders():
+    return render_template('orders.html')
+
+@app.route('/couriers')
+def couriers():
+    return render_template('couriers.html')
+
+@app.route('/filials')
+def filials():
+    return render_template('filials.html')
+
+@app.route('/promocode')
+def promocode():
+    return render_template('promocode.html')
+
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, port=5002)
